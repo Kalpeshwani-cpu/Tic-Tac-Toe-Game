@@ -1,0 +1,70 @@
+body {
+    font-family: "Cormorant Garamond", serif, Arial, sans-serif;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(255, 105, 180,0.5);
+    background-size:cover;
+}
+
+.container h1{
+    color: #ff69b4;
+}
+
+.container {
+    text-align: center;
+    background:url("background.png");
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color:rgba(78, 106, 167, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+.cell:hover{
+    background-color:rgba(78, 106, 167, 1);
+}
+
+#restartButton {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: pink;
+    color: rgb(4, 33, 95);
+    cursor: pointer;
+}
+#restartButton:hover{
+    background-color: #ff69b4;
+    color:#0047ab;
+    box-shadow: 0 0 10px white;
+    transform: scale(1.1);
+}
+
+#message {
+    margin-top: 30px;
+    color: #f8c8dc;
+    font-size: 1.5em;
+}
